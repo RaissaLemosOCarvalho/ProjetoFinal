@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos CEFET - NI/ Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tela_login.css">
+</head>
+<body>
+    <!-- Navbar fixa no topo -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/Logo_cefet.png" alt="Logo">
+        </a>
+        <span class="navbar-text">Login Portfólio de Projetos</span>
+        <div class="navbar-right">
+            <img src="../images/outra_imagem.png" alt="Outra Imagem">
+            <img src="../images/mais_uma_imagem.png" alt="Mais uma Imagem">
+        </div>
+    </nav>
+
+    <!-- Formulário de Login -->
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="../php/login_usuario.php" method="post">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-block">Entrar</button>
+                    <div class="extra-links">
+                        <a href="#">Esqueceu sua senha?</a>
+                        <a href="#">Não possui uma conta?</a>
+                        <a href="tela_cadastro.html">Crie uma! Comece aqui</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="footer-custom">
+        <div class="footer-content">
+            <img src="../images/local.png" alt="Logo Local">
+            <div class="footer-text">
+                <p>&copy; 2024 CEFET - Núcleo de Inovação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Projeto desenvolvido por Raissa</p>
+        </div>
+    </footer>
+
+    <!-- Scripts necessários para o Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

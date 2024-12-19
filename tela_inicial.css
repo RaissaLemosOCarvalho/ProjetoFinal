@@ -1,0 +1,119 @@
+body {
+    margin-top: 70px; /* Ajuste para evitar sobreposição da navbar fixa */
+    padding-top: 100px; /* Adicionando espaço para o conteúdo não ficar embaixo da navbar */
+    min-height: 180vh; /* Aumentando a altura mínima para descer mais o rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    background-color: #043c6c; /* Azul escuro */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .navbar-text {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right img {
+    margin-left: 10px;
+}
+
+.nav-secondary {
+    margin-top: 0; /* Remover margem superior */
+    position: relative;
+    top: -10px; /* Colar na navbar */
+    z-index: 1; /* Garantir que está acima dos outros elementos */
+}
+
+.navbar-light.bg-light {
+    background-color: #f8f9fa !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.images-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre imagens */
+}
+
+.images-section .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.images-section .image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.images-section .image-wrapper .image-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.images-section .large-image {
+    flex: 2;
+    max-width: 55%; /* Tornando a imagem grande menor */
+}
+
+.images-section .small-images-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as pequenas imagens */
+}
+
+.news-section {
+    margin-top: 20px; /* Espaçamento acima da seção de notícias */
+}
+
+.news-section img,
+.events-section img,
+.testimonials-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-custom {
+    padding: 15px;
+    color: white;
+    background-color: #043c6c;
+    margin-top: auto; /* Faz o rodapé ir para o final da página */
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-rights {
+    margin-top: 5px;
+}

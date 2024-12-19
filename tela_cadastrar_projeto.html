@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Projeto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tela_cadastro_projetos.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/Logo_cefet.png" alt="Logo">
+        </a>
+        <span class="navbar-text">Cadastro de Projetos</span>
+        <div class="navbar-right">
+            <img src="../images/brazil_flag.png" alt="Bandeira do Brasil">
+            <img src="../images/search_icon.png" alt="Ícone de Pesquisa">
+            <img src="../images/menu_icon.png" alt="Ícone de Menu">
+            <img src="../images/another_icon.png" alt="Outro Ícone">
+        </div>
+    </header>
+
+    <div class="container mt-5">
+      
+        <form action="../php/cadastrar_projeto.php" method="post">
+            <div class="form-group">
+                <label for="titulo" class="font-weight-bold">Título</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao" class="font-weight-bold">Descrição</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="colaboradores" class="font-weight-bold">Adicionar Colaboradores</label>
+                <input type="text" class="form-control" id="pesquisa_colaboradores" placeholder="Pesquise e adicione colaboradores">
+                <ul id="resultados_pesquisa" class="list-group mt-2"></ul>
+                <h5 class="font-weight-bold mt-3">Colaboradores Selecionados</h5>
+                <ul id="colaboradores_selecionados" class="list-group mt-2"></ul>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-custom btn-lg">Cadastrar Projeto</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer-custom mt-auto">
+        <div class="footer-content">
+            <p>Centro Federal de Educação Tecnológica Celso Suckow da Fonseca - Campus Nova Iguaçu - RJ</p>
+            <p>Est. de Adrianópolis, 1317 - Vila Nossa Sra. da Conceição, Nova Iguaçu, Rio de Janeiro, RJ, Brasil. CEP: 26041-271</p>
+            <p>Telefone: (21) 2886-8911</p>
+        </div>
+        <div class="footer-rights">
+            <p>&copy; 2024 CEFET-NI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../javascript/tela_cadastrar_projetos.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos CEFET - NI/ Cadastrar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tela_cadastro_usuario.css">
+</head>
+<body>
+    <!-- Navbar fixa no topo -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="../images/Logo_cefet.png" alt="Logo">
+        </a>
+        <span class="navbar-text">Cadastro Portfólio de Projetos</span>
+        <div class="navbar-right">
+            <img src="../images/outra_imagem.png" alt="Outra Imagem">
+            <img src="../images/mais_uma_imagem.png" alt="Mais uma Imagem">
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <form action="../php/cadastro_usuario.php" method="post" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        <div class="invalid-feedback">Por favor, preencha seu nome.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailCadastro">E-mail</label>
+                        <input type="email" class="form-control" id="emailCadastro" name="email" placeholder="Digite seu e-mail" required>
+                        <div class="invalid-feedback">Por favor, preencha seu email.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="senhaCadastro">Senha</label>
+                        <input type="password" class="form-control" id="senhaCadastro" name="senha" placeholder="Escolha uma senha" required>
+                        <div class="invalid-feedback">Por favor, preencha sua senha.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarSenha">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+                        <div class="invalid-feedback">Por favor, confirme sua senha.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="opcaoCadastro">Escolha uma opção</label>
+                        <select class="form-control" id="opcaoCadastro" name="tipo_usuario" required onchange="mostrarOpcao()">
+                            <option value="" disabled selected>Eu sou...</option>
+                            <option value="aluno">Aluno</option>
+                            <option value="professor">Professor</option>
+                            <option value="visitante">Visitante</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor, selecione o tipo de usuário.</div>
+                    </div>
+
+                    <div id="opcao1" class="opcao-adicional">
+                        <div class="form-group">
+                            <label for="curso">Curso</label>
+                            <input type="text" class="form-control" id="curso" name="curso" placeholder="Diga de qual colegiado você faz parte">
+                        </div>
+                    </div>
+                    <div id="opcao2" class="opcao-adicional">
+                        <div class="form-group">
+                            <label for="colegiado">Colegido</label>
+                            <input type="text" class="form-control" id="colegiado" name="colegiado" placeholder="Diga o seu curso">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom btn-block">Cadastrar</button>
+                    <p class="text-center mt-3">Já tem uma conta? <a href="tela_login.html">Entrar</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom">
+        <div class="footer-content">
+            <img src="../images/local.png" alt="Logo Local">
+            <div class="footer-text">
+                <p>&copy; 2024 CEFET - Núcleo de Inovação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Projeto desenvolvido por Raissa</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/tela_cadastro_usuario.js"></script>
+</body>
+</html>

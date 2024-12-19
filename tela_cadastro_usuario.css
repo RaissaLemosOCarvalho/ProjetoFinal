@@ -1,0 +1,114 @@
+body {
+    margin-top: 70px; /* Ajuste para evitar sobreposição da navbar fixa */
+    padding-top: 100px; /* Adicionando espaço para o conteúdo não ficar embaixo da navbar */
+    min-height: 180vh; /* Aumentando a altura mínima para descer mais o rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 50px; /* Move o container para cima */
+}
+
+.navbar-custom, .footer-custom {
+    background-color: #043c6c; /* Azul escuro */
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between; /* Faz a logo ir para a esquerda e a imagem para a direita */
+    align-items: center;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex; /* Para colocar a logo e outras imagens lado a lado */
+    align-items: center; /* Alinha as imagens verticalmente */
+}
+
+.navbar-custom .navbar-text {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold; /* Adiciona o negrito */
+    font-size: 2rem; /* Aumenta o tamanho do texto */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right img {
+    margin-left: 10px;
+}
+
+.footer-custom {
+    padding: 15px;
+    color: white;
+    margin-top: auto; /* Faz o rodapé ir para o final da página */
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-wrap: wrap; /* Garante que o conteúdo se ajusta em telas menores */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row; /* Colocando imagem ao lado do texto */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    margin-bottom: 15px;
+    justify-content: center; /* Centraliza os itens */
+}
+
+.footer-content img {
+    width: 120px; /* Aumentando o tamanho da imagem no rodapé */
+    height: 120px; /* Mantendo a proporção */
+    margin-right: 15px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.footer-text {
+    font-size: 1.1rem;
+}
+
+.footer-rights {
+    text-align: center; /* Alinha os direitos autorais ao centro */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: none;
+}
+
+.btn-custom {
+    background-color: #043c6c; /* Azul escuro */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda do botão */
+    padding: 12px 20px; /* Aumenta o tamanho do botão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+}
+
+.card-body {
+    margin-top: 30px; /* Move o formulário para baixo */
+}
+
+.form-group label {
+    font-weight: bold; /* Deixa os rótulos em negrito */
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte do rótulo */
+}
+
+.opcao-adicional {
+    display: none; /* Esconde as opções adicionais por padrão */
+}
+

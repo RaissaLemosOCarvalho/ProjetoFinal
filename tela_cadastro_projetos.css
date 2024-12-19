@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 70px; /* Ajuste para evitar sobreposição da navbar fixa */
+    padding-top: 100px; /* Adicionando espaço para o conteúdo não ficar embaixo da navbar */
+    min-height: 180vh; /* Aumentando a altura mínima para descer mais o rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-custom, .footer-custom {
+    background-color: #043c6c; /* Azul escuro */
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .navbar-text {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right img {
+    margin-left: 10px;
+}
+
+.footer-custom {
+    padding: 15px;
+    color: white;
+    margin-top: auto; /* Faz o rodapé ir para o final da página */
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-rights {
+    margin-top: 5px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* Removendo o box-shadow */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.remover-colaborador {
+    margin-left: 10px;
+}
+
+.btn-custom {
+    background-color: #043c6c; /* Azul escuro */
+    color: white;
+    border: none;
+    padding: 12px 30px; /* Aumentando o tamanho do botão */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
